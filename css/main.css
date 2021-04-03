@@ -1,0 +1,96 @@
+@font-face {
+    font-family:"Grenale-ConBla";
+    src:local("assets\font\Grenale-ConBla.otf") format(opentype);
+    font-weight: bold;
+
+    font-family: "Ambit-Regular";
+    src: local("/assets/font/Ambit-Regular.ttf") format(Truetype);
+}
+
+:root {
+    --blue:#0066a5;
+    --white:#fff;
+    --black:#000000;
+    --green:#0aa350;
+    --yellow:#ffc000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.left_contain {
+    width: 50vw;
+    margin-left: 80px;
+}
+
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.top_bar >div > img {
+    width: 10vw;
+}
+
+.top_bar >div button {
+    padding: ;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+h1 > span {
+    color:var(--green) ;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    padding: 17px 25px;
+    font-size: 20px;
+    font-family: ;
+    background-color: white;
+}
+
+
+.cta_button>button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+
+.tagline {
+    display: flex;
+    margin-top: 90px;
+}
+
+.tagline > h2 {
+    margin: 0 50px;
+}
+
+.tagline > h2:nth-child(1) {
+    margin: 0 0 !important;
+}
+
+.right {
+    width: 50vw;
+}
+.model {
+    width: 40vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
