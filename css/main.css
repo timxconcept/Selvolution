@@ -2,9 +2,11 @@
     font-family:"Grenale-ConBla";
     src:local("assets\font\Grenale-ConBla.otf") format(opentype);
     font-weight: bold;
-
+}
+@font-face {
     font-family: "Ambit-Regular";
     src: local("/assets/font/Ambit-Regular.ttf") format(Truetype);
+    font-weight: 400;
 }
 
 :root {
@@ -50,22 +52,33 @@ body {
 h1 {
     font-size: 70px;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 h1 > span {
     color:var(--green) ;
 }
 
-button {
+.register_bg {
+    background-color: var(--yellow);
+    width: 20px;
+    height: 35px;
+    position: relative;
+    top: -24px;
+    left: 20px;
+    z-index: -1;
+}
+
+a {
     text-decoration: none;
     border: none;
     padding: 17px 25px;
     font-size: 20px;
-    font-family: ;
-    background-color: white;
+    font-family: Ambit-Regular ;
+    background-color: none;
 }
 
 
-.cta_button>button:nth-child(1) {
+.cta_button>a:nth-child(1) {
     background-color: black;
     color: white;
 }
