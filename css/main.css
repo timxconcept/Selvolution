@@ -24,10 +24,12 @@
 body {
     margin: 0;
     padding: 0;
+    background: url(/assets/img/Background_texture.png);
 }
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .left_contain {
@@ -50,9 +52,9 @@ body {
 }
 
 h1 {
-    font-size: 70px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    font-size: 80px;
+    margin-top: 3em;
+    margin-bottom: 100px;
 }
 h1 > span {
     color:var(--green) ;
@@ -73,8 +75,12 @@ a {
     border: none;
     padding: 17px 25px;
     font-size: 20px;
-    font-family: Ambit-Regular ;
+    font-family: "Ambit-Regular";
     background-color: none;
+}
+
+.cta_button {
+    margin-bottom: 17em;
 }
 
 
