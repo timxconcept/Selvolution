@@ -53,8 +53,8 @@ body {
 
 h1 {
     font-size: 80px;
-    margin-top: 3em;
-    margin-bottom: 100px;
+    margin-top: 17vh;
+    margin-bottom: 11vh;
 }
 h1 > span {
     color:var(--green) ;
@@ -77,10 +77,11 @@ a {
     font-size: 20px;
     font-family: "Ambit-Regular";
     background-color: none;
+    color: var(--black);
 }
 
 .cta_button {
-    margin-bottom: 17em;
+    margin-bottom: 32vh;
 }
 
 
@@ -92,7 +93,7 @@ a {
 
 .tagline {
     display: flex;
-    margin-top: 90px;
+   
 }
 
 .tagline > h2 {
