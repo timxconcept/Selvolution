@@ -1,12 +1,10 @@
 @font-face {
     font-family:"Grenale-ConBla";
-    src:local("assets\font\Grenale-ConBla.otf") format(opentype);
-    font-weight: bold;
+    src:local("assets\font\Grenale-ConBla.otf");
 }
 @font-face {
     font-family: "Ambit-Regular";
-    src: local("/assets/font/Ambit-Regular.ttf") format(Truetype);
-    font-weight: 400;
+    src: local("/assets/font/Ambit-Regular.ttf");
 }
 
 :root {
@@ -24,17 +22,16 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(/assets/img/Background_texture.png);
+    background: url(https://res.cloudinary.com/timx-design/image/upload/v1617895978/Selvolution/Background_texture_zlhgc2.png);
 }
 
 .container {
-    display: flex;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .left_contain {
-    width: 50vw;
-    margin-left: 80px;
+    width: 80vw;
+    margin-left: 8vw;
 }
 
 .top_bar {
@@ -44,20 +41,23 @@ body {
 }
 
 .top_bar >div > img {
-    width: 10vw;
-}
-
-.top_bar >div button {
-    padding: ;
+    width: clamp(6rem, 10vw, 9rem);
 }
 
 h1 {
-    font-size: 80px;
+    font-size: clamp(2rem, 6vw, 4rem);
     margin-top: 17vh;
     margin-bottom: 11vh;
 }
 h1 > span {
     color:var(--green) ;
+}
+
+.register {
+    margin-left: -4vw;
+}
+.register a {
+    display: inline !important;
 }
 
 .register_bg {
@@ -71,6 +71,7 @@ h1 > span {
 }
 
 a {
+    display: block;
     text-decoration: none;
     border: none;
     padding: 17px 25px;
@@ -78,10 +79,12 @@ a {
     font-family: "Ambit-Regular";
     background-color: none;
     color: var(--black);
+    width: 150px;
 }
 
 .cta_button {
-    margin-bottom: 32vh;
+    margin-bottom: 10em;
+    display: flex;
 }
 
 
@@ -97,11 +100,13 @@ a {
 }
 
 .tagline > h2 {
-    margin: 0 50px;
+    margin: 0 5vw;
+    font-size: clamp(1rem, 1.5vw, 4rem);
+
 }
 
 .tagline > h2:nth-child(1) {
-    margin: 0 0 !important;
+    margin-left: 0 !important;
 }
 
 .right {
@@ -114,3 +119,26 @@ a {
     right: 0;
 }
 
+@media screen and (max-width: 730px) {
+    .right_contain{
+        display: none;
+    }
+
+    .cta_button {
+        flex-direction: column;
+        margin-bottom: 20vh;
+    }
+    h1 {
+        text-align: center;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+    a{
+        margin: 0 auto;
+        width: 250px;
+        text-align: center;
+    }
+    .tagline {
+        justify-content: center;
+       
+    }
+}
