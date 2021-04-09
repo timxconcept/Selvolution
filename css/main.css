@@ -1,10 +1,10 @@
 @font-face {
     font-family:"Grenale-ConBla";
-    src:local("assets\font\Grenale-ConBla.otf");
+    src:local("https://res.cloudinary.com/timx-design/raw/upload/v1617964517/Selvolution/font/Grenale-ConBla_hrwo2d.otf");
 }
 @font-face {
     font-family: "Ambit-Regular";
-    src: local("/assets/font/Ambit-Regular.ttf");
+    src: local("https://res.cloudinary.com/timx-design/raw/upload/v1617964517/Selvolution/font/Ambit-Regular_truzbq.ttf");
 }
 
 :root {
